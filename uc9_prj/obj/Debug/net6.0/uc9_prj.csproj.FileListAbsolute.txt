@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\bin\Debug\net6.0\uc9_prj.exe
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\bin\Debug\net6.0\uc9_prj.deps.json
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\bin\Debug\net6.0\uc9_prj.runtimeconfig.json
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\bin\Debug\net6.0\uc9_prj.dll
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\bin\Debug\net6.0\uc9_prj.pdb
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.AssemblyInfo.cs
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.dll
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\refint\uc9_prj.dll
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.pdb
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\uc9_prj.genruntimeconfig.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\uc9_prj\obj\Debug\net6.0\ref\uc9_prj.dll

@@ -1,0 +1,15 @@
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\bin\Debug\net6.0\prj_Contas.exe
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\bin\Debug\net6.0\prj_Contas.deps.json
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\bin\Debug\net6.0\prj_Contas.runtimeconfig.json
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\bin\Debug\net6.0\prj_Contas.dll
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\bin\Debug\net6.0\prj_Contas.pdb
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.csproj.AssemblyReference.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.AssemblyInfoInputs.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.AssemblyInfo.cs
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.csproj.CoreCompileInputs.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.dll
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\refint\prj_Contas.dll
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.pdb
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\prj_Contas.genruntimeconfig.cache
+C:\Users\User\OneDrive\Documentos\senai\projeto-uc9\prj_Contas\obj\Debug\net6.0\ref\prj_Contas.dll
