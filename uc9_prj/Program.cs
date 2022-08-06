@@ -37,7 +37,7 @@ do{
             novaPf.nome = "Carla";
             novaPf.dataNascimento = "15/10/1988";
             novaPf.cpf = "23212345674";
-            novaPf.rendimento = 2000.0f;
+            novaPf.rendimento = 2000.5f;
             novoEnd.logradouro = "Avenida Capuava";
             novoEnd.numero = 565;
             novoEnd.complemento = "Casa";
@@ -63,7 +63,7 @@ do{
             novaPj.nome = "NomePj";
             novaPj.cnpj = "00.000.000/0001-00";
             novaPj.razaoSocial = "Razao Social Pj";
-            novaPj.rendimento = 8000.5f;
+            novaPj.rendimento = 8000.3f;
             novoEndPj.logradouro = "Avenida Capuava";
             novoEndPj.numero = 565;
             novoEndPj.complemento = "Comercial";

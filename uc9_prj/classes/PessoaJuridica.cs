@@ -16,16 +16,17 @@ namespace uc9_prj.classes{
             */
             
             if(rendimento <= 1500){
-                return rendimento * 0.03f;;
+                //a lib MathF.Round rece um float e o nº de casas decimais que vc quer arredondar
+                return MathF.Round ((rendimento * 0.03f),2);
             }
             else if (rendimento >1500 && rendimento <=3500){
-                return rendimento * 0.05f;
+                return MathF.Round((rendimento * 0.05f),2);
             }
             else if (rendimento >3500 && rendimento <=6000){
-                return rendimento * 0.07f;
+                return MathF.Round((rendimento * 0.07f), 2);
             }
              else {
-                return rendimento * 0.09f;
+                return MathF.Round((rendimento * 0.09f), 2);
             }
         }
         
@@ -49,8 +50,7 @@ namespace uc9_prj.classes{
                     }
                 }                
                 return false;                 
-            }                         
-            
+            }                      
             return false;
         }
 
