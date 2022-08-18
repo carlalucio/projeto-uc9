@@ -220,7 +220,7 @@ do{
                 Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine($"Cadastro Realizado com Sucesso!!!");
                 Console.ResetColor();
-                Thread.Sleep(3000);
+                Thread.Sleep(2000);
                 break;
 
                 case "2":
