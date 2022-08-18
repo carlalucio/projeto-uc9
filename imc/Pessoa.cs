@@ -23,22 +23,22 @@ namespace imc
             string classificacao;
 
             if (argIMC < 18.5){ 
-                classificacao = "abaixo do peso";
+                classificacao = "Abaixo do peso";
             } 
             else if (argIMC >=18.5 && argIMC < 25){
-                 classificacao = "peso ideal";
+                 classificacao = "Peso Ideal";
             }
             else if (argIMC >=25 && argIMC < 30){
-                 classificacao = "sobrepeso";
+                 classificacao = "Sobrepeso";
             }
             else if (argIMC >=30 && argIMC < 35){
-                 classificacao = "obesidade I";
+                 classificacao = "Obesidade I";
             }
             else if (argIMC >=35 && argIMC < 40){
-                classificacao = "obesidade II";
+                classificacao = "Obesidade II";
             }
             else {
-                classificacao = "obesidade III";
+                classificacao = "Obesidade III";
             }
             return classificacao;
         }
