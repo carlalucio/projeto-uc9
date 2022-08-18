@@ -1,8 +1,8 @@
 namespace prj_Contas
 {
     public abstract class Conta {
-        public string ?agencia{get; private set;}
-        public string ?numero{get; private set;}
+        public string? agencia{get; private set;}
+        public string? numero{get; private set;}
         public double saldo{get; private set;}
 
 

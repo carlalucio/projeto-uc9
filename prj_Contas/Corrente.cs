@@ -16,8 +16,7 @@ namespace prj_Contas
         }
 
          public override string Imprimir(){
-            string texto;
-            texto = base.Imprimir();
+            string texto = base.Imprimir();
             texto += "\nLimite: " + this.limite;
             return texto;
         }
