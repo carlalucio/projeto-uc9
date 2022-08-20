@@ -5,6 +5,7 @@ Projetos feitos na UC-9 durante os encontros remotos, juntamente com o Professor
 Sistema para automatização que facilita o processo de busca de clientes e/ou registro de suas atividades. 
 
 **Features**
+
 O sistema de cadastro de clientes customizado apresenta as seguintes características:
  
 -   Armazena todos os cadastros das pessoas físicas e jurídicas;
