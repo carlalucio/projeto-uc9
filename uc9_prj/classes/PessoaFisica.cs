@@ -5,6 +5,7 @@ namespace uc9_prj.classes
     public class PessoaFisica : Pessoa, IPessoaFisica  {
         public string ?cpf { get; set; }
         public string ?dataNascimento { get; set; }
+        public string caminho { get; private set; } = "Database/PessoaFisica.txt";
                        
         
         public override float PagarImposto(float rendimento){
@@ -60,8 +61,64 @@ namespace uc9_prj.classes
 
                 return false;  
             }     
-            return false;        
+            return false;       
+        }  
 
-        }       
+        //método para inserir os dados em um arquivo .txt usando o StreamWrite
+        public  void Inserir(PessoaFisica pf){
+            VerificarPastaArquivo(caminho);
+
+            //cria o objeto que herda o StreamWrhite e passa como parâmetro o path do arquivo
+            //o Using fecha o arquivo quando terminar a execução da implementação => using(resource){}
+            using (StreamWriter sw = new StreamWriter(caminho)){
+                //qual valor vai escrever dentro do arquivo. Whrite Line escreve quebrando linha
+                sw.Write($"{pf.nome}, ");
+                sw.Write($"{pf.dataNascimento}, ");
+                sw.Write($"{pf.cpf}, "); 
+                sw.Write($"{pf.rendimento} ");
+                
+
+                //fechar o arquivo após a inserção se não estivesse usando Using
+                //sw.Close();
+            }          
+        }
+         
+        //método para imprimir na tela as informações a partir do arquivo .txt
+        public List<PessoaFisica> Ler(){
+            List<PessoaFisica> listaPf = new List<PessoaFisica>();
+            try{
+                 string[] linhas = File.ReadAllLines(caminho);
+
+                foreach (string cadaLinha in linhas){
+                    string[] atributos = cadaLinha.Split(",");
+
+                    PessoaFisica cadaPf = new PessoaFisica();
+
+                    cadaPf.nome = atributos[0];
+                    cadaPf.dataNascimento = atributos[1];
+                    cadaPf.cpf = atributos[2];
+                    cadaPf.rendimento = float.Parse(atributos[3]);
+                    
+                    listaPf.Add(cadaPf);
+                }
+            return listaPf;
+                
+            }catch (System.Exception e) {
+                 Console.WriteLine("A Lista está vazia");
+                Console.WriteLine(e.Message);
+                Thread.Sleep(3000);
+                return listaPf;
+            }
+           
+        }     
     }
 }
+                        //StreamReader para ler o que tem salvo no arquivo indicado
+                        // using(StreamReader sr = new StreamReader($"Carla.txt")){
+                        //     string linha;
+                        //     while((linha = sr.ReadLine()) != null){
+                        //         Console.WriteLine($"{linha}");                                
+                        //     }
+                        //     Console.WriteLine($"Aperte 'Enter' para continuar");
+                        //     Console.ReadLine();                            
+                        // }
