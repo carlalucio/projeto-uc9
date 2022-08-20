@@ -27,6 +27,62 @@ O sistema de cadastro de clientes customizado apresenta as seguintes caracterís
 
 **Execução da aplicação**
 
+Inicia com a tela de Boas Vindas:
+=============================================================
+|           Bem vindo ao Sistema de Cadastro de             |       
+|              Pessoas Físicas e Jurídicas                  |
+=============================================================
+
+Após a Barra de carregamento, abre-se o seguinte menu:
+
+=============================================================
+|              Escolha uma das opções a seguir:             |
+|___________________________________________________________|  
+|                                                           |    
+|                   1- Pessoa Física                        |
+|                   2- Pessoa Jurídica                      |
+|                   0- Sair                                 |
+=============================================================
+
+De acordo com a Opção selecionada, submenus são abertos.
+Caso a *Opção 0* seja selecionada, uma barra de carregamento e finalização aparecem no Console
+
+
+
+- Submenu da Opção 1 - Pessoa Física:
+=============================================================
+|              Escolha uma das opções a seguir:             |
+|___________________________________________________________|  
+|                                                           |    
+|               1- Cadastar Pessoa Física                   |
+|               2- Mostrar Pessoa Física                    |
+|               0- Sair                                     |
+=============================================================
+
+*Opção 1 - Cadastrar Pessoa Física:* Solicita informações como: Nome, CPF , Data de nascimento, Rendimento e Endereço.
+E após o cadastramento, gera um arquivo .txt onde armazena algumas informações inseridas
+
+*Opção 2 - Mostrar Pessoa Física:* Caso existam cadastros no arquivo .txt, ele retorna o  Nome, CPF , Data de nascimento e Taxa de Imposto a Pagar
+
+*Opção 0 - Sair:* Retorna para o Menu anterior
+
+
+- Submenu da Opção 2 - Pessoa Jurídica
+=============================================================
+|              Escolha uma das opções a seguir:             |
+|___________________________________________________________|  
+|                                                           |    
+|               1- Cadastar Pessoa Jurídica                 |
+|               2- Mostrar Pessoa Jurídica                  |
+|               0- Sair                                     |
+=============================================================
+*Opção 1 - Cadastrar Pessoa Jurídica:* Solicita informações como: Nome, CNPJ , Razão Social, Rendimento e Endereço.
+E após o cadastramento, gera um arquivo .csv onde armazena algumas informações inseridas
+
+*Opção 2 - Mostrar Pessoa Jurídica:* Caso existam cadastros no arquivo .csv, ele retorna o  Nome, CNPJ , Razão Social e Taxa de Imposto a Pagar
+
+*Opção 0 - Sair:* Retorna para o Menu anterior
+
 
 **Erros comuns**
 - O Cliente Pessao Física deve ser maior de 18 anos
