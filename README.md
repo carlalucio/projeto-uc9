@@ -3,7 +3,7 @@ Projetos feitos na UC-9 durante os encontros remotos, juntamente com o Professor
 # [Sistema de Cadastro de Clientes :computer: ](uc9_prj/Program.cs)
 
 Sistema para automatização que facilita o processo de busca de clientes e/ou registro de suas atividades. 
-
+---
 **Features**
 
 O sistema de cadastro de clientes customizado apresenta as seguintes características:
@@ -14,17 +14,30 @@ O sistema de cadastro de clientes customizado apresenta as seguintes caracterís
 -   Ambos devem possuir um Rendimento,  Endereço e indicar se o endereço é comercial ou residencial;
 -   Calcula o imposto baseado no Rendimento informado;
 -   O sistema armazenar os registros em arquivos;
+---
+**Tecnologias utilizadas** 👨‍💻️
 
-**Tecnologias utilizadas**
-- .NET
-- C#
-- VSCode
+Esse projeto foi criado utilizando as tecnologias:
 
-**Pré-requisitos de instalação**
-- .NET
-- C#
-- VSCode
+***Back-End***
+- [.NET](https://dotnet.microsoft.com/download)
+- [C#](https://docs.microsoft.com/pt-br/dotnet/csharp/)
 
+***Editor***
+- [VSCode](https://code.visualstudio.com/)
+---
+**Como rodar o projeto** 📦️
+
+Clone o projeto com o comando abaixo:
+```bash
+  # Clone o repositório
+  ❯ git clone https://github.com/carlalucio/projeto-uc9.git
+	# Entre no diretório
+  ❯ cd projeto-uc9/uc9_prj/
+	# Execute o projeto
+  ❯ dotnet run .\uc9_prj\
+```
+---
 **Execução da aplicação**
 
 Inicia com a tela de Boas Vindas:
@@ -79,15 +92,13 @@ E após o cadastramento, gera um arquivo .csv onde armazena algumas informaçõe
 *Opção 2 - Mostrar Pessoa Jurídica:* Caso existam cadastros no arquivo .csv, ele retorna o  Nome, CNPJ , Razão Social e Taxa de Imposto a Pagar
 
 *Opção 0 - Sair:* Retorna para o Menu anterior
-
-
+---
 **Erros comuns**
 - Se a lista estiver vazia uma mensagem será exibida e retornará para o submenu.
 - O Cliente Pessao Física deve ser maior de 18 anos
 - O CNPJ deve ter o seguinte formato: "xx.xxx.xxx/0001-xx" ou "xxxxxxxx0001xx"
 - Opção de Endereço Comercial só aceita as seguintes respostas:  "sim", "s", "não" e "n";
 Caso esses parâmetros não sejam atendidos, retornará uma mensagem de Erro.
-
-
+---
 **Contribuidores**
 Luiz Carlos Machi Lozano
