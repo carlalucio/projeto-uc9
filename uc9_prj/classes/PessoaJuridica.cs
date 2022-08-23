@@ -64,7 +64,8 @@ namespace uc9_prj.classes
 
         public List<PessoaJuridica> Ler(){
             List<PessoaJuridica> listaPj = new List<PessoaJuridica>();
-            try{                
+
+            if (File.Exists(caminho)){
                 string[] linhas = File.ReadAllLines(caminho);
 
                 foreach (string cadaLinha in linhas){
@@ -80,16 +81,14 @@ namespace uc9_prj.classes
                     listaPj.Add(cadaPj);
             }
             return listaPj;
-                
-            }catch (System.Exception e){
-                
-                Console.WriteLine("A Lista está vazia");
-                Console.WriteLine(e.Message);
+            }else {
+                Console.WriteLine("A Lista está vazia");                
                 Thread.Sleep(3000);
                 return listaPj;
-                
             }
-            
+
+
+                       
         }
 
     }

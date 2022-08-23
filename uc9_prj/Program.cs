@@ -9,14 +9,9 @@ Console.WriteLine(@$"
 ");
 
 
-BarraCarregamento("Carregando", 200);
+BarraCarregamento("Carregando", 150);
 
 //List<PessoaFisica> listaPF = new List<PessoaFisica>();
-
-
-
-
-
 //List<PessoaJuridica> listaPJ = new List<PessoaJuridica>();
 
 string? opcao;
@@ -147,7 +142,7 @@ do
                     default:
                         Console.Clear();
                         Console.WriteLine($"Opção inválida, por favor digite outra opção");
-                        Thread.Sleep(2000);
+                        Thread.Sleep(1500);
                         break;
                 }
             } while (opcaoPF != "0");
@@ -238,7 +233,7 @@ do
                         Console.ForegroundColor = ConsoleColor.DarkGreen;
                         Console.WriteLine($"Cadastro Realizado com Sucesso!!!");
                         Console.ResetColor();
-                        Thread.Sleep(2000);
+                        Thread.Sleep(1500);
                         break;
 
                     case "2":
@@ -264,7 +259,7 @@ do
                     default:
                         Console.Clear();
                         Console.WriteLine($"Opção inválida, por favor digite outra opção");
-                        Thread.Sleep(2000);
+                        Thread.Sleep(1500);
                         break;
                 }
             } while (opcaoPJ != "0");
@@ -277,7 +272,7 @@ do
         default:
             Console.Clear();
             Console.WriteLine($"Opcção inválida, por favor digite outra opção ");
-            Thread.Sleep(2000);
+            Thread.Sleep(1500);
             break;
     }
 } while (opcao != "0");

@@ -86,8 +86,8 @@ namespace uc9_prj.classes
         //método para imprimir na tela as informações a partir do arquivo .txt
         public List<PessoaFisica> Ler(){
             List<PessoaFisica> listaPf = new List<PessoaFisica>();
-            try{
-                 string[] linhas = File.ReadAllLines(caminho);
+            if (File.Exists(caminho)){
+                string[] linhas = File.ReadAllLines(caminho);
 
                 foreach (string cadaLinha in linhas){
                     string[] atributos = cadaLinha.Split(",");
@@ -102,13 +102,19 @@ namespace uc9_prj.classes
                     listaPf.Add(cadaPf);
                 }
             return listaPf;
-                
-            }catch (System.Exception e) {
-                 Console.WriteLine("A Lista está vazia");
-                Console.WriteLine(e.Message);
+
+            }else {
+                Console.WriteLine("A Lista está vazia");                
                 Thread.Sleep(3000);
                 return listaPf;
             }
+
+            
+                 
+                
+           
+                 
+            
            
         }     
     }
