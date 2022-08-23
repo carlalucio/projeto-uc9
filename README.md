@@ -82,7 +82,7 @@ E após o cadastramento, gera um arquivo .csv onde armazena algumas informaçõe
 
 
 **Erros comuns**
-- Se a lista estiver vazia uma Excessão será lançada e encerrará o programa
+- Se a lista estiver vazia uma mensagem será exibida e retornará para o submenu.
 - O Cliente Pessao Física deve ser maior de 18 anos
 - O CNPJ deve ter o seguinte formato: "xx.xxx.xxx/0001-xx" ou "xxxxxxxx0001xx"
 - Opção de Endereço Comercial só aceita as seguintes respostas:  "sim", "s", "não" e "n";
