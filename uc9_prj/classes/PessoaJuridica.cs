@@ -58,7 +58,7 @@ namespace uc9_prj.classes
 
         public void Inserir(PessoaJuridica pj){
             VerificarPastaArquivo(caminho);
-            string[] pjString = { $"{pj.nome}, {pj.cnpj}, {pj.razaoSocial},{pj.rendimento}" };
+            string[] pjString = { $"{pj.nome}, {pj.cnpj}, {pj.razaoSocial},{pj.rendimento},{pj.endereco.logradouro}, {pj.endereco.numero}, {pj.endereco.complemento}, {pj.endereco.endComercial}" };
             File.AppendAllLines(caminho, pjString);
         }
 
@@ -72,11 +72,17 @@ namespace uc9_prj.classes
                     string[] atributos = cadaLinha.Split(",");
 
                     PessoaJuridica cadaPj = new PessoaJuridica();
+                    Endereco cadaEnd = new Endereco();
 
                     cadaPj.nome = atributos[0];
                     cadaPj.cnpj = atributos[1];
                     cadaPj.razaoSocial = atributos[2];
                     cadaPj.rendimento = float.Parse(atributos[3]);
+                    cadaEnd.logradouro = atributos[4];
+                    cadaEnd.numero = int.Parse(atributos[5]);
+                    cadaEnd.complemento = atributos[6];
+                    cadaEnd.endComercial = bool.Parse(atributos[7]);
+                    cadaPj.endereco = cadaEnd;
                     
                     listaPj.Add(cadaPj);
             }
