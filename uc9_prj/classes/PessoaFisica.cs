@@ -5,7 +5,7 @@ namespace uc9_prj.classes
     public class PessoaFisica : Pessoa, IPessoaFisica  {
         public string ?cpf { get; set; }
         public string ?dataNascimento { get; set; }
-        public string caminho { get; private set; } = "Database/PessoaFisica.txt";
+        public string caminho { get; private set; } = "Database/PessoaFisica.csv";
                        
         
         public override float PagarImposto(float rendimento){
@@ -64,28 +64,18 @@ namespace uc9_prj.classes
             return false;       
         }  
 
-        //método para inserir os dados em um arquivo .txt usando o StreamWrite
-        public  void Inserir(PessoaFisica pf){
+         public void Inserir(PessoaFisica pf){
             VerificarPastaArquivo(caminho);
-
-            //cria o objeto que herda o StreamWrhite e passa como parâmetro o path do arquivo
-            //o Using fecha o arquivo quando terminar a execução da implementação => using(resource){}
-            using (StreamWriter sw = new StreamWriter(caminho)){
-                //qual valor vai escrever dentro do arquivo. Whrite Line escreve quebrando linha
-                sw.Write($"{pf.nome}, ");
-                sw.Write($"{pf.dataNascimento}, ");
-                sw.Write($"{pf.cpf}, "); 
-                sw.Write($"{pf.rendimento} ");
-                
-
-                //fechar o arquivo após a inserção se não estivesse usando Using
-                //sw.Close();
-            }          
+            string[] pfString = { $"{pf.nome}, {pf.cpf}, {pf.dataNascimento},{pf.rendimento},{pf.endereco.logradouro}, {pf.endereco.numero}, {pf.endereco.complemento}, {pf.endereco.endComercial}" };
+            File.AppendAllLines(caminho, pfString);
         }
+        
          
         //método para imprimir na tela as informações a partir do arquivo .txt
         public List<PessoaFisica> Ler(){
             List<PessoaFisica> listaPf = new List<PessoaFisica>();
+            Endereco cadaEnd = new Endereco();
+
             if (File.Exists(caminho)){
                 string[] linhas = File.ReadAllLines(caminho);
 
@@ -94,10 +84,15 @@ namespace uc9_prj.classes
 
                     PessoaFisica cadaPf = new PessoaFisica();
 
-                    cadaPf.nome = atributos[0];
-                    cadaPf.dataNascimento = atributos[1];
-                    cadaPf.cpf = atributos[2];
+                    cadaPf.nome = atributos[0];                    
+                    cadaPf.cpf = atributos[1];
+                    cadaPf.dataNascimento = atributos[2];
                     cadaPf.rendimento = float.Parse(atributos[3]);
+                    cadaEnd.logradouro = atributos[4];
+                    cadaEnd.numero = int.Parse(atributos[5]);
+                    cadaEnd.complemento = atributos[6];
+                    cadaEnd.endComercial = bool.Parse(atributos[7]);
+                    cadaPf.endereco = cadaEnd;
                     
                     listaPf.Add(cadaPf);
                 }
@@ -127,4 +122,23 @@ namespace uc9_prj.classes
                         //     }
                         //     Console.WriteLine($"Aperte 'Enter' para continuar");
                         //     Console.ReadLine();                            
+                        // }
+
+                        //método para inserir os dados em um arquivo .txt usando o StreamWrite
+                        // public  void Inserir(PessoaFisica pf){
+                        //     VerificarPastaArquivo(caminho);
+
+                        //     //cria o objeto que herda o StreamWrhite e passa como parâmetro o path do arquivo
+                        //     //o Using fecha o arquivo quando terminar a execução da implementação => using(resource){}
+                        //     using (StreamWriter sw = new StreamWriter(caminho)){
+                        //         //qual valor vai escrever dentro do arquivo. Whrite Line escreve quebrando linha
+                        //         sw.Write($"{pf.nome}, ");
+                        //         sw.Write($"{pf.dataNascimento}, ");
+                        //         sw.Write($"{pf.cpf}, "); 
+                        //         sw.Write($"{pf.rendimento} ");
+                                
+
+                        //         //fechar o arquivo após a inserção se não estivesse usando Using
+                        //         //sw.Close();
+                        //     }          
                         // }
